@@ -30,7 +30,7 @@ const Login = () => {
     try {
       setIsLoading(true); // Set loading state to true
       const res = await axios.post(
-        "http://64.225.8.160:4000//register/login",
+        "http://64.225.8.160:4000/register/login",
         values
       );
 

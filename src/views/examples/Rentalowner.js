@@ -202,7 +202,7 @@ const Rentalowner = () => {
     try {
       values["property_type"] = localStorage.getItem("propertyType");
       const res = await axios.post(
-        "http://64.225.8.160:4000//rentals/rentals",
+        "http://64.225.8.160:4000/rentals/rentals",
         values
       );
 

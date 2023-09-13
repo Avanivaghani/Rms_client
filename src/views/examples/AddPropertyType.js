@@ -85,7 +85,7 @@ const AddPropertyType = () => {
     try {
       // values["property_type"] = selectedProperty;
       const res = await axios.post(
-        "http://64.225.8.160:4000//newproparty/newproparty",
+        "http://64.225.8.160:4000/newproparty/newproparty",
         values
       );
 

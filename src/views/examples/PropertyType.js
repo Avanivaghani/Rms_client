@@ -41,7 +41,7 @@ const PropertyType = () => {
   
   let [editData, setEditData] = React.useState({});
   // let getPropertyData = async () => {
-  //   let responce = await axios.get("https://rms-node-9f9ec5119d40.herokuapp.com/newproparty/newproparty");
+  //   let responce = await axios.get("http://64.225.8.160:4000//newproparty/newproparty");
   //   setPropertyData(responce.data.data);
   // };
 
@@ -58,7 +58,7 @@ const PropertyType = () => {
   const getPropertyData = async () => {
     try {
       const response = await axios.get(
-        "https://rms-node-9f9ec5119d40.herokuapp.com/newproparty/newproparty"
+        "http://64.225.8.160:4000//newproparty/newproparty"
       );
       setPropertyData(response.data.data);
     } catch (error) {
@@ -70,7 +70,7 @@ const PropertyType = () => {
   //   var handleSubmit = async (values) => {
   //    // values["createAt"] = moment(new Date()).format("YYYY-MM-DD, HH:mm:ss");
   //     let response = await axios.post(
-  //       "https://rms-node-9f9ec5119d40.herokuapp.com/newproparty/newproparty",
+  //       "http://64.225.8.160:4000//newproparty/newproparty",
   //       values
   //     );
   //     if (response.data.statusCode === 200) {
@@ -85,7 +85,7 @@ const PropertyType = () => {
   //   handleSubmit = async (values) => {
   //     //values["upadateAt"] = moment(new Date()).format("YYYY-MM-DD, HH:mm:ss");
   //     let response = await axios.put(
-  //       "https://rms-node-9f9ec5119d40.herokuapp.com/newproparty/newproparty" + id,
+  //       "http://64.225.8.160:4000//newproparty/newproparty" + id,
   //       values
   //     );
   //     if (response.data.statusCode === 200) {
@@ -97,7 +97,7 @@ const PropertyType = () => {
   // }
   const editPropertyData = async (id, updatedData) => {
     try {
-      const editUrl = `https://rms-node-9f9ec5119d40.herokuapp.com/newproparty/proparty-type/${id}`;
+      const editUrl = `http://64.225.8.160:4000//newproparty/proparty-type/${id}`;
       console.log("Edit URL:", editUrl);
       console.log("Property ID:", id);
       console.log("Updated Data:", updatedData); // Log the updated data for debugging
@@ -119,7 +119,7 @@ const PropertyType = () => {
   var deleteProperty = (id) => {
     axios
       .delete(
-        "https://rms-node-9f9ec5119d40.herokuapp.com/newproparty/newproparty/",
+        "http://64.225.8.160:4000//newproparty/newproparty/",
         {
           data: { _id: id }, // Send the id as _id in the request body
         }

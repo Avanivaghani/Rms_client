@@ -131,7 +131,7 @@ const Rentals = () => {
     try {
       values["property_type"] = localStorage.getItem("propertyType");
       const res = await axios.post(
-        "https://rms-node-9f9ec5119d40.herokuapp.com/rentals/rentals",
+        "http://64.225.8.160:4000//rentals/rentals",
         values
       );
 

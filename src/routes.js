@@ -75,6 +75,7 @@ import AddPropertyType from "views/examples/AddPropertyType";
 import AddStaffMember from "views/examples/AddStaffMember";
 import StaffMember from "views/examples/StaffMember";
 import Rentalowner from "views/examples/Rentalowner";
+import Login from "views/examples/Login";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -155,6 +156,14 @@ var routes = [
     component: <Rentalowner/>,
     layout: "/admin",    
   },
+
+  {
+        path: "/login",
+        name: "Login",
+        icon: "ni ni-key-25 text-info",
+        component: <Login />,
+        layout: "/auth",
+      },
 
 
 ];

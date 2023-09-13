@@ -30,7 +30,7 @@ const Login = () => {
     try {
       setIsLoading(true); // Set loading state to true
       const res = await axios.post(
-        "https://rms-node-9f9ec5119d40.herokuapp.com/register/login",
+        "http://64.225.8.160:4000//register/login",
         values
       );
 

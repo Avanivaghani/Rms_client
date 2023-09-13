@@ -45,7 +45,7 @@ const PropertiesTables = () => {
   let [rentalsData, setRentalsData] = React.useState();
 
   let getRentalsData = async () => {
-    let responce = await axios.get("https://rms-node-9f9ec5119d40.herokuapp.com/rentals/rentals");
+    let responce = await axios.get("http://64.225.8.160:4000//rentals/rentals");
     setRentalsData(responce.data.data);
   };
 
